@@ -4,7 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo Hello from Jenkinsfile'
+                sh 'echo Build stage'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'echo Test stage'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh 'echo Deploy stage'
             }
         }
     }
